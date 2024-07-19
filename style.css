@@ -64,3 +64,13 @@ main .welcome {
     padding: 25px;
     text-align: center;
 }
+
+/* ! Media */
+
+@media (max-width: 1200px) {
+
+main img {
+    grid-column: span 12;
+}
+
+}
