@@ -12,7 +12,7 @@ body {
 
 header {
     padding: 10px 40px;
-    background-color: rgb(41, 39, 39);
+    background-color: #292727;
     align-items: center;
 }
 
@@ -60,6 +60,7 @@ main .welcome {
 }
 
 .footer {
+    background-color: #292727;
     display: grid;
     padding: 25px;
     text-align: center;
@@ -70,7 +71,45 @@ main .welcome {
 @media (max-width: 1200px) {
 
 main img {
-    grid-column: span 12;
+    grid-column: 2/ span 10;
 }
+
+main .welcome {
+    grid-column: 2/ span 10;
+}
+
+main .card {
+    grid-column: span 6;
+}
+
+}
+
+@media (max-width: 750px) {
+    header {
+        padding: 20px 0;
+    }
+
+    header h1 {
+        grid-column: span 12;
+        text-align: center;
+        margin: 0;
+    }
+
+    header nav {
+        grid-column: span 12;
+        justify-self: center;
+    }
+
+    main img {
+        grid-column: span 12;
+    }
+
+    main .welcome {
+        grid-column: span 12;
+    }
+
+    main .card {
+        grid-column: span 12;
+    }
 
 }
