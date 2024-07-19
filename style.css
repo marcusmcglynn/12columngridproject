@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    background-color: #4d4747;
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+}
+
+header {
+    padding: 10px 40px;
+    background-color: rgb(41, 39, 39);
+    align-items: center;
+}
+
+header h1 {
+    grid-column: span 6;
+}
+
+header nav {
+    grid-column: 7 / span 6;
+    justify-self: right;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+
+main {
+    padding: 20px;
+    margin: 60px auto;
+    max-width: 1200px;
+}
+
+main img {
+    grid-column: span 6;
+    width: 100%;
+}
+
+main h3 {
+    grid-column: span 12;
+    text-align: center;
+}
+
+main .welcome {
+    grid-column: 8 / span 5;
+    text-align: center;
+}
+
+.card {
+    grid-column: span 6;
+    background-color: rgb(114, 114, 213);
+    padding: 50px;
+    justify-self: center;
+}
+
+.footer {
+    display: grid;
+    padding: 25px;
+    text-align: center;
+}
